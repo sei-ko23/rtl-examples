@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const AddTodo = ({ add }) => {
   const [todo, setTodo] = useState("");
-  console.log(todo);
   return (
     <div>
       <h1>Add a to do</h1>
