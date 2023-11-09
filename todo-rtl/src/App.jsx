@@ -1,22 +1,30 @@
 import { useState } from "react";
-import "./App.css";
+import { uuid } from "uuidv4";
 import AddTodo from "./components/AddTodo/AddTodo";
 import DisplayTodo from "./components/DisplayTodo/DisplayTodo";
+import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([
     {
       title: "do this",
-      id: Math.random(),
+      id: uuid(),
+      completed: false,
     },
     {
       title: "do that",
-      id: Math.random(),
+      id: uuid(),
+      completed: false,
     },
   ]);
+
+  const addNewTodo = (todo) => {
+    setTodos([...todos, todo]);
+  };
+  console.log(todos);
   return (
     <div className='App-header'>
-      <AddTodo />
+      <AddTodo add={addNewTodo} />
       <DisplayTodo todos={todos} />
     </div>
   );
