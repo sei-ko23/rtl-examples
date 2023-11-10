@@ -3,6 +3,7 @@ import { uuid } from "uuidv4";
 import AddTodo from "./components/AddTodo/AddTodo";
 import DisplayTodo from "./components/DisplayTodo/DisplayTodo";
 import "./App.css";
+import CompletedTodo from "./components/CompletedTodo/CompletedTodo";
 
 function App() {
   const [todos, setTodos] = useState([
@@ -39,6 +40,7 @@ function App() {
         markCompleted={markCompleted}
         deleteTodo={deleteTodo}
       />
+      <CompletedTodo todos={todos} />
     </div>
   );
 }
