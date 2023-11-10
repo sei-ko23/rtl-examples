@@ -15,7 +15,10 @@ const mockTodo = {
 };
 
 describe("Todo Item testing", () => {
-  test("renders to do item correctly with mock information", () => {
+  test("render todo item with null prop", () => {
+    render(<TodoItem todo={null} />);
+  });
+  test("render todo item correctly with mock information", () => {
     render(<TodoItem todo={mockTodo} />);
   });
   test("Todo is marked completed when checkbox clicked", async () => {
