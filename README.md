@@ -2,3 +2,5 @@ https://amourycodes.com/guides/a-simple-guide-to-getting-started-with-testing-yo
 https://mvskiran.medium.com/testing-react-apps-with-jest-and-react-testing-library-rtl-1c204e44259f
 https://www.freecodecamp.org/news/how-to-test-user-interactions-in-react/
 https://www.freecodecamp.org/news/write-unit-tests-using-react-testing-library/
+
+to display coverage : npm t -- --coverage --watchAll=false
