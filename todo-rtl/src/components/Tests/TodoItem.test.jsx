@@ -5,14 +5,14 @@ import TodoItem from "../TodoItem/TodoItem";
 /* USER EVENT DEFINITION */
 const user = userEvent.setup();
 /* MOCK FUNCTIONS DEFINITION */
+const markCompleted = jest.fn();
+const deleteTodo = jest.fn();
+/* MOCK DATA */
 const mockTodo = {
   completed: false,
   id: "1234",
   title: "work out",
 };
-
-const markCompleted = jest.fn();
-const deleteTodo = jest.fn();
 
 describe("Todo Item testing", () => {
   test("renders to do item correctly with mock information", () => {
