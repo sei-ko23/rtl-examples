@@ -1,11 +1,16 @@
 import React from "react";
-import Todo from "../Todo/Todo";
+import TodoItem from "../TodoItem/TodoItem";
 
-const DisplayTodo = ({ todos }) => {
+const DisplayTodo = ({ todos, markCompleted, deleteTodo }) => {
   return (
     <div>
       {todos.map((todo) => (
-        <Todo todo={todo} key={todo.id} />
+        <TodoItem
+          todo={todo}
+          key={todo.id}
+          markCompleted={markCompleted}
+          deleteTodo={deleteTodo}
+        />
       ))}
     </div>
   );

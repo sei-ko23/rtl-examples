@@ -9,7 +9,7 @@ function App() {
     {
       title: "do this",
       id: uuid(),
-      completed: false,
+      completed: true,
     },
     {
       title: "do that",
@@ -21,11 +21,24 @@ function App() {
   const addNewTodo = (todo) => {
     setTodos([...todos, todo]);
   };
-  console.log(todos);
+  const markCompleted = (todoId) => {
+    setTodos(
+      [...todos].map((todo) =>
+        todo.id === todoId ? { ...todo, completed: !todo.completed } : todo
+      )
+    );
+  };
+  const deleteTodo = (todoId) => {
+    setTodos([...todos].filter((todo) => todo.id !== todoId));
+  };
   return (
     <div className='App-header'>
       <AddTodo add={addNewTodo} />
-      <DisplayTodo todos={todos} />
+      <DisplayTodo
+        todos={todos}
+        markCompleted={markCompleted}
+        deleteTodo={deleteTodo}
+      />
     </div>
   );
 }

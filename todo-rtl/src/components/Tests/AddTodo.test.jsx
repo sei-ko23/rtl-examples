@@ -18,7 +18,6 @@ describe("Add To Do testing", () => {
   afterEach(() => {
     mockFnt.mockClear();
   });
-
   test("renders correctly", () => {
     const todoHeading = screen.getByRole("heading", { name: /add a to do/i });
     expect(todoHeading).toBeInTheDocument();
