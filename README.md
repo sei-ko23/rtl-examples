@@ -3,4 +3,6 @@ https://mvskiran.medium.com/testing-react-apps-with-jest-and-react-testing-libra
 https://www.freecodecamp.org/news/how-to-test-user-interactions-in-react/
 https://www.freecodecamp.org/news/write-unit-tests-using-react-testing-library/
 
+https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+
 to display coverage : npm t -- --coverage --watchAll=false
