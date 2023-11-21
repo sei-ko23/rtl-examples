@@ -4,7 +4,10 @@ https://www.freecodecamp.org/news/how-to-test-user-interactions-in-react/
 https://www.freecodecamp.org/news/write-unit-tests-using-react-testing-library/
 
 
-https://nabendu82.medium.com/react-testing-with-jest-and-rtl-in-typescript-a8d62f7570ff
+forms and hooks : https://nabendu82.medium.com/react-testing-with-jest-and-rtl-in-typescript-a8d62f7570ff
+react hook form https://claritydev.net/blog/testing-react-hook-form-with-react-testing-library
+form accessibility test : https://medium.com/beambenefits/testing-forms-for-accessibility-using-react-testing-library-297059953130
+////
 https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
 
 to display coverage : npm t -- --coverage --watchAll=false
