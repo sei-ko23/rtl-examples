@@ -87,7 +87,7 @@ const Register = () => {
           <Form.Group className='mb-m' controlId='password'>
             <Form.Label>Password</Form.Label>
             <Form.Control
-              type='password'
+              type='text'
               placeholder='Enter your password'
               name='password'
               value={state.password}
